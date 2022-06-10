@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <img class="mySlides" src="https://c.files.bbci.co.uk/1260/production/_108240740_beatles-abbeyroad-index-reuters-applecorps.jpg"
+  style="width:100%">
+  <img class="mySlides" src="static/images/strokes.jpg"
+  style="width:100%">
+  <img class="mySlides" src="static/images/pink.jpg"
+  style="width:100%">
+</section>
+
+<section class="w3-container"  >
+  <h2 class="w3-wide" >CREATE YOUR PLAYLIST</h2>
+  <p class="w3-opacity"><i>We love music</i></p>
+  <p class="w3-justify" >You can use this fictional website to create and share different songs with people, who love
+    music. Here you can discover new songs/albums and artists. Help other people discover new music which you enjoy,
+    or just have fun creating a playlist.</p>
+    <p class="w3-justify" >- From Barbare and Keti <3</p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <h2 class="try-text">Wanna try our website? Log in or Sign up</h2>
+              <a class="nav-link" href="{{url_for('signup')}}">Sign up</a>
+</section>
+
+{% endblock %}
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="error_404">
+        <h2 class="error_h2">Congrats, you found a secret !!</h2>
+        <p class="error_p">here's a link to get back to the home page</p>
+        <a class="nav-link" href="{{url_for('home')}}">GO TO HOME PAGE</a>
+    </div>
+    <div class="error_img">
+        <img src="static/images/error.jpg" class="img-fluid" width="500">
+    </div>
+</body>
+</html>
